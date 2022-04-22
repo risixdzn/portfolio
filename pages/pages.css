@@ -180,25 +180,29 @@ body{
     .titulo-description{
         margin-top: 15px;
         font-size: 4.8387vw;
+        margin-left: -3vw;
     }
     
     .info-description{
-       justify-content: center;
+        justify-content: center;
         font-size: 3.0721vw;
         margin-top: -15px;
+        margin-left: -3vw;
     }
     
     .divisao{
-        margin-left: 23vw;
+        margin-left: 21.5vw;
         justify-content: center;
     }
 
     .saibamais-btn{        
         justify-content: center;
+        margin-left: -3vw;
     }
     
     .legal{
         font-size: 3.2679vw;
-        justify-content: center;        
+        justify-content: center;  
+        margin-left: -3vw;      
     }
 }
