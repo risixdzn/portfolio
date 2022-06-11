@@ -38,16 +38,60 @@
                 </button>
             </div>        
         </nav>  
-    </header>
+  </header>
 
-    <nav class="mobile-nav">
+  <nav class="mobile-nav">
         <a href="https://risixdzn.github.io/home">Home</a>
         <a href="https://risixdzn.github.io/portfolio">Portfólio</a>
         <a href="#">Preços</a>
         <a href="https://twitter.com/risixdzn" target="_blank">Contato</a>
-    </nav>   
+  </nav>   
 
-    <script src="main.js"></script> 	
+  <script src="main.js"></script> 	
+  
+  <!--progressbar-->
+  
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+  <div id="percent"></div>  
+  <script type="text/javascript">
+    var percent = document.getElementById("progressbar");
+    var percent = document.getElementById("percent");
+
+    window.onscroll = function(){ 
+      var totalHeight = document.body.scrollHeight - window.innerHeight;
+      var progress = (window.pageYOffset / totalHeight) * 100;
+      progressbar.style.height = progress + "%";
+    }
+  </script>
+
+  <!--progressbarend-->
+
+  <!--backtop-->
+
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!--backtopend-->
+
+  <!--preloaderstart-->
+
+  <section id="preloadersec">
+    <div id="preloader">
+      <div class="spinner"></div>
+      <h1 class="loadtext">Carregando...</h1>
+    </div>
+  </section>  
+  <script type="text/javascript">
+    
+    var loader = document.getElementById("preloadersec");
+
+    window.addEventListener("load", function(){
+      loader.style.display = "none";
+    })
+
+  </script>
 
   <!--title-->  
 	<div class="main">		
