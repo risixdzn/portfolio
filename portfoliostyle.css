@@ -313,7 +313,7 @@ nav {
   backdrop-filter: blur(5px);  
   border-radius: 25px;
   z-index: 98;  
-  
+  animation: float 3s ease-in-out infinite;  
 }
 
 .preloader .spinner {
@@ -734,4 +734,19 @@ body {
     opacity: 0;
     transform: rotateX(-10deg);
   }
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translate(-50%, -50%);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translate(-50%, -55%);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translate(-50%, -50%);
+	}
 }
