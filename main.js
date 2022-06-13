@@ -19,15 +19,22 @@ window.onload = function () {
     }
   });
 
-  const toTop = document.querySelector(".to-top");
+  const toTop = document.querySelector(".to-top");  
 
-  //hamburger-menu mobile
-
-  const hamburger = document.querySelector(".hamburger");
-  const mobile_menu = document.querySelector(".mobile-nav");
-
-  hamburger.addEventListener("click", function () {
-    hamburger.classList.toggle("is-active");
-    mobile_menu.classList.toggle("is-active");
-  });
+  //loader 
+  document.getElementById('preloader').className = 'disappear';
 };
+
+//hamburger-menu mobile
+
+const hamburger = document.querySelector(".hamburger");
+const mobile_menu = document.querySelector(".mobile-nav");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("is-active");
+  mobile_menu.classList.toggle("is-active");
+});
+
+
+
+
