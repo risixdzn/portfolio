@@ -40,8 +40,7 @@ body{
     display: flex;
     color: #fff;
     justify-content: end;
-    padding: 50px; 
-    
+    padding: 50px;     
 }
 
 .close-btn li{
